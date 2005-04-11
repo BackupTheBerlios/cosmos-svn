@@ -1,0 +1,175 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.5.4	//
+CosmosGame	src/Client/UI/CosmosGame.cpp	/^CosmosGame::CosmosGame()$/;"	kind:function	line:20	language:C++	class:CosmosGame	signature:()
+CosmosGame	src/Client/UI/CosmosGame.h	/^	CosmosGame();$/;"	kind:prototype	line:34	language:C++	class:CosmosGame	access:public	signature:()
+CosmosGame	src/Client/UI/CosmosGame.h	/^class CosmosGame$/;"	kind:class	line:31	language:C++
+CosmosGame_FrameListener	src/Client/UI/CosmosGame_FrameListener.cpp	/^CosmosGame_FrameListener::CosmosGame_FrameListener(RenderWindow *win, Camera *cam, bool useBufferedInputKeys \/*= false*\/, bool useBufferedInputMouse \/*= false*\/)$/;"	kind:function	line:59	language:C++	class:CosmosGame_FrameListener	signature:(RenderWindow *win, Camera *cam, bool useBufferedInputKeys , bool useBufferedInputMouse )
+CosmosGame_FrameListener	src/Client/UI/CosmosGame_FrameListener.h	/^	CosmosGame_FrameListener(RenderWindow *win, Camera *cam, bool useBufferedInputKeys \/*= false*\/, bool useBufferedInputMouse \/*= false*\/);$/;"	kind:prototype	line:41	language:C++	class:CosmosGame_FrameListener	access:public	signature:(RenderWindow *win, Camera *cam, bool useBufferedInputKeys , bool useBufferedInputMouse )
+CosmosGame_FrameListener	src/Client/UI/CosmosGame_FrameListener.h	/^class CosmosGame_FrameListener : public FrameListener, public KeyListener$/;"	kind:class	line:37	language:C++	inherits:FrameListener,KeyListener
+ES_EXCEPTION_GAME	src/Client/UI/main.cpp	/^	ES_EXCEPTION_GAME,$/;"	kind:enumerator	line:32	language:C++	enum:ExecutionSummary	file:
+ES_EXCEPTION_OGRE	src/Client/UI/main.cpp	/^	ES_EXCEPTION_OGRE,$/;"	kind:enumerator	line:31	language:C++	enum:ExecutionSummary	file:
+ES_EXCEPTION_UNKNOWN	src/Client/UI/main.cpp	/^	ES_EXCEPTION_UNKNOWN$/;"	kind:enumerator	line:33	language:C++	enum:ExecutionSummary	file:
+ES_GOOD	src/Client/UI/main.cpp	/^	ES_GOOD = EXIT_SUCCESS,    \/\/ Set ES_GOOD to EXIT_SUCCESS, because we'll be returning the ExecutionSummary$/;"	kind:enumerator	line:29	language:C++	enum:ExecutionSummary	file:
+ES_INVALID_ARGUMENTS	src/Client/UI/main.cpp	/^	ES_INVALID_ARGUMENTS,$/;"	kind:enumerator	line:30	language:C++	enum:ExecutionSummary	file:
+ExecutionSummary	src/Client/UI/main.cpp	/^enum ExecutionSummary$/;"	kind:enum	line:27	language:C++	file:
+GCC_3_1	debug/config.h	/^#define GCC_3_1 /;"	kind:macro	line:5	language:C++
+HAVE_DLFCN_H	debug/config.h	/^#define HAVE_DLFCN_H /;"	kind:macro	line:8	language:C++
+HAVE_INTTYPES_H	debug/config.h	/^#define HAVE_INTTYPES_H /;"	kind:macro	line:11	language:C++
+HAVE_MEMORY_H	debug/config.h	/^#define HAVE_MEMORY_H /;"	kind:macro	line:14	language:C++
+HAVE_STDINT_H	debug/config.h	/^#define HAVE_STDINT_H /;"	kind:macro	line:20	language:C++
+HAVE_STDLIB_H	debug/config.h	/^#define HAVE_STDLIB_H /;"	kind:macro	line:23	language:C++
+HAVE_STRINGS_H	debug/config.h	/^#define HAVE_STRINGS_H /;"	kind:macro	line:26	language:C++
+HAVE_STRING_H	debug/config.h	/^#define HAVE_STRING_H /;"	kind:macro	line:29	language:C++
+HAVE_SYS_STAT_H	debug/config.h	/^#define HAVE_SYS_STAT_H /;"	kind:macro	line:32	language:C++
+HAVE_SYS_TYPES_H	debug/config.h	/^#define HAVE_SYS_TYPES_H /;"	kind:macro	line:35	language:C++
+HAVE_UNISTD_H	debug/config.h	/^#define HAVE_UNISTD_H /;"	kind:macro	line:38	language:C++
+PACKAGE	debug/config.h	/^#define PACKAGE /;"	kind:macro	line:44	language:C++
+PACKAGE_BUGREPORT	debug/config.h	/^#define PACKAGE_BUGREPORT /;"	kind:macro	line:47	language:C++
+PACKAGE_NAME	debug/config.h	/^#define PACKAGE_NAME /;"	kind:macro	line:50	language:C++
+PACKAGE_STRING	debug/config.h	/^#define PACKAGE_STRING /;"	kind:macro	line:53	language:C++
+PACKAGE_TARNAME	debug/config.h	/^#define PACKAGE_TARNAME /;"	kind:macro	line:56	language:C++
+PACKAGE_VERSION	debug/config.h	/^#define PACKAGE_VERSION /;"	kind:macro	line:59	language:C++
+STDC_HEADERS	debug/config.h	/^#define STDC_HEADERS /;"	kind:macro	line:62	language:C++
+VERSION	debug/config.h	/^#define VERSION /;"	kind:macro	line:65	language:C++
+__COSMOSGAME_FRAMELISTENER_H__	src/Client/UI/CosmosGame_FrameListener.h	/^#define __COSMOSGAME_FRAMELISTENER_H__$/;"	kind:macro	line:27	language:C++
+__COSMOSGAME_H__	src/Client/UI/CosmosGame.h	/^#define __COSMOSGAME_H__$/;"	kind:macro	line:21	language:C++
+_printExecutionSummary	src/Client/UI/main.cpp	/^void _printExecutionSummary(const ExecutionSummary status)$/;"	kind:function	line:133	language:C++	signature:(const ExecutionSummary status)
+_printExecutionSummary	src/Client/UI/main.cpp	/^void _printExecutionSummary(const ExecutionSummary status);	\/\/ Prints what happened over the course of$/;"	kind:prototype	line:37	language:C++	file:	signature:(const ExecutionSummary status)
+_processArguments	src/Client/UI/main.cpp	/^ExecutionSummary _processArguments(const int argc, char *argv[])$/;"	kind:function	line:167	language:C++	signature:(const int argc, char *argv[])
+_processArguments	src/Client/UI/main.cpp	/^ExecutionSummary _processArguments(const int argc, char *argv[]);$/;"	kind:prototype	line:40	language:C++	file:	signature:(const int argc, char *argv[])
+_showUsage	src/Client/UI/main.cpp	/^void _showUsage()$/;"	kind:function	line:199	language:C++	signature:()
+_showUsage	src/Client/UI/main.cpp	/^void _showUsage();$/;"	kind:prototype	line:42	language:C++	file:	signature:()
+add	media/materials/programs/Example_FresnelPS.asm	/^add r2, r2, c1$/;"	kind:label	line:66	language:Asm
+chooseSceneManager	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::chooseSceneManager()$/;"	kind:function	line:90	language:C++	class:CosmosGame	signature:()
+chooseSceneManager	src/Client/UI/CosmosGame.h	/^	void chooseSceneManager();$/;"	kind:prototype	line:53	language:C++	class:CosmosGame	access:protected	signature:()
+configure	src/Client/UI/CosmosGame.cpp	/^bool CosmosGame::configure()$/;"	kind:function	line:75	language:C++	class:CosmosGame	signature:()
+configure	src/Client/UI/CosmosGame.h	/^	bool configure();$/;"	kind:prototype	line:51	language:C++	class:CosmosGame	access:protected	signature:()
+createCamera	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::createCamera()$/;"	kind:function	line:96	language:C++	class:CosmosGame	signature:()
+createCamera	src/Client/UI/CosmosGame.h	/^	void createCamera();$/;"	kind:prototype	line:55	language:C++	class:CosmosGame	access:protected	signature:()
+createFrameListener	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::createFrameListener()$/;"	kind:function	line:109	language:C++	class:CosmosGame	signature:()
+createFrameListener	src/Client/UI/CosmosGame.h	/^	void createFrameListener();$/;"	kind:prototype	line:57	language:C++	class:CosmosGame	access:protected	signature:()
+createResourceListener	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::createResourceListener()$/;"	kind:function	line:159	language:C++	class:CosmosGame	signature:()
+createResourceListener	src/Client/UI/CosmosGame.h	/^	void createResourceListener();$/;"	kind:prototype	line:69	language:C++	class:CosmosGame	access:protected	signature:()
+createScene	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::createScene()$/;"	kind:function	line:116	language:C++	class:CosmosGame	signature:()
+createScene	src/Client/UI/CosmosGame.h	/^	void createScene();$/;"	kind:prototype	line:59	language:C++	class:CosmosGame	access:protected	signature:()
+createViewports	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::createViewports()$/;"	kind:function	line:124	language:C++	class:CosmosGame	signature:()
+createViewports	src/Client/UI/CosmosGame.h	/^	void createViewports();$/;"	kind:prototype	line:63	language:C++	class:CosmosGame	access:protected	signature:()
+def	media/materials/programs/Example_FresnelPS.asm	/^def c2, 2, 1, 0, 0$/;"	kind:label	line:14	language:Asm
+destroyScene	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::destroyScene()$/;"	kind:function	line:120	language:C++	class:CosmosGame	signature:()
+destroyScene	src/Client/UI/CosmosGame.h	/^	void destroyScene();$/;"	kind:prototype	line:61	language:C++	class:CosmosGame	access:protected	signature:()
+dld_link	configure	/^dld_link ();$/;"	kind:function	line:12391	language:Sh
+dld_link	configure	/^dld_link ();$/;"	kind:function	line:17909	language:Sh
+dld_link	configure	/^dld_link ();$/;"	kind:function	line:8683	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:11927	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:12257	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:12324	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:17445	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:17775	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:17842	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:8219	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:8549	language:Sh
+dlopen	configure	/^dlopen ();$/;"	kind:function	line:8616	language:Sh
+dp3_sat	media/materials/programs/OffsetMapping_specular.asm	/^dp3_sat r4.rgb, r0_bx2, r4         \/\/ N dot L - diffuse calc $/;"	kind:label	line:33	language:Asm
+dp3_sat	media/materials/programs/OffsetMapping_specular.asm	/^dp3_sat r5.rgb, r0_bx2, r5         \/\/ N dot H - spec calc $/;"	kind:label	line:32	language:Asm
+frameEnded	src/Client/UI/CosmosGame_FrameListener.cpp	/^bool CosmosGame_FrameListener::frameEnded(const FrameEvent &evt)$/;"	kind:function	line:352	language:C++	class:CosmosGame_FrameListener	signature:(const FrameEvent &evt)
+frameEnded	src/Client/UI/CosmosGame_FrameListener.h	/^	bool frameEnded(const FrameEvent &evt);$/;"	kind:prototype	line:56	language:C++	class:CosmosGame_FrameListener	access:public	signature:(const FrameEvent &evt)
+frameStarted	src/Client/UI/CosmosGame_FrameListener.cpp	/^bool CosmosGame_FrameListener::frameStarted(const FrameEvent &evt)$/;"	kind:function	line:292	language:C++	class:CosmosGame_FrameListener	signature:(const FrameEvent &evt)
+frameStarted	src/Client/UI/CosmosGame_FrameListener.h	/^	bool frameStarted(const FrameEvent &evt);$/;"	kind:prototype	line:54	language:C++	class:CosmosGame_FrameListener	access:public	signature:(const FrameEvent &evt)
+go	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::go()$/;"	kind:function	line:34	language:C++	class:CosmosGame	signature:()
+go	src/Client/UI/CosmosGame.h	/^	void go(); \/\/ Start the game$/;"	kind:prototype	line:37	language:C++	class:CosmosGame	access:public	signature:()
+keyClicked	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::keyClicked(KeyEvent *e)$/;"	kind:function	line:369	language:C++	class:CosmosGame_FrameListener	signature:(KeyEvent *e)
+keyClicked	src/Client/UI/CosmosGame_FrameListener.h	/^	void keyClicked(KeyEvent *e);$/;"	kind:prototype	line:62	language:C++	class:CosmosGame_FrameListener	access:public	signature:(KeyEvent *e)
+keyPressed	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::keyPressed(KeyEvent *e)$/;"	kind:function	line:381	language:C++	class:CosmosGame_FrameListener	signature:(KeyEvent *e)
+keyPressed	src/Client/UI/CosmosGame_FrameListener.h	/^	void keyPressed(KeyEvent *e);$/;"	kind:prototype	line:64	language:C++	class:CosmosGame_FrameListener	access:public	signature:(KeyEvent *e)
+keyReleased	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::keyReleased(KeyEvent *e)$/;"	kind:function	line:385	language:C++	class:CosmosGame_FrameListener	signature:(KeyEvent *e)
+keyReleased	src/Client/UI/CosmosGame_FrameListener.h	/^	void keyReleased(KeyEvent *e);$/;"	kind:prototype	line:66	language:C++	class:CosmosGame_FrameListener	access:public	signature:(KeyEvent *e)
+loadResources	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::loadResources()$/;"	kind:function	line:163	language:C++	class:CosmosGame	signature:()
+loadResources	src/Client/UI/CosmosGame.h	/^	void loadResources();$/;"	kind:prototype	line:73	language:C++	class:CosmosGame	access:protected	signature:()
+lrp	media/materials/programs/Example_FresnelPS.asm	/^lrp r0, v0.x, r1, r2$/;"	kind:label	line:72	language:Asm
+mAniso	src/Client/UI/CosmosGame_FrameListener.h	/^	int mAniso;$/;"	kind:member	line:91	language:C++	class:CosmosGame_FrameListener	access:private
+mCamera	src/Client/UI/CosmosGame.h	/^	Camera *mCamera;$/;"	kind:member	line:41	language:C++	class:CosmosGame	access:protected
+mCamera	src/Client/UI/CosmosGame_FrameListener.h	/^	Camera *mCamera;$/;"	kind:member	line:79	language:C++	class:CosmosGame_FrameListener	access:private
+mDebugOverlay	src/Client/UI/CosmosGame_FrameListener.h	/^	Overlay *mDebugOverlay;$/;"	kind:member	line:72	language:C++	class:CosmosGame_FrameListener	access:protected
+mEventProcessor	src/Client/UI/CosmosGame_FrameListener.h	/^	EventProcessor *mEventProcessor;$/;"	kind:member	line:77	language:C++	class:CosmosGame_FrameListener	access:private
+mFiltering	src/Client/UI/CosmosGame_FrameListener.h	/^	TextureFilterOptions mFiltering;$/;"	kind:member	line:90	language:C++	class:CosmosGame_FrameListener	access:private
+mFrameListener	src/Client/UI/CosmosGame.h	/^	CosmosGame_FrameListener *mFrameListener;$/;"	kind:member	line:43	language:C++	class:CosmosGame	access:protected
+mInputDevice	src/Client/UI/CosmosGame_FrameListener.h	/^	InputReader *mInputDevice;$/;"	kind:member	line:78	language:C++	class:CosmosGame_FrameListener	access:private
+mInputTypeSwitchingOn	src/Client/UI/CosmosGame_FrameListener.h	/^	bool mStatsOn, mUseBufferedInputKeys, mUseBufferedInputMouse, mInputTypeSwitchingOn;$/;"	kind:member	line:83	language:C++	class:CosmosGame_FrameListener	access:private
+mMoveScale	src/Client/UI/CosmosGame_FrameListener.h	/^	float mMoveScale;$/;"	kind:member	line:85	language:C++	class:CosmosGame_FrameListener	access:private
+mMoveSpeed	src/Client/UI/CosmosGame_FrameListener.h	/^	Real mMoveSpeed;$/;"	kind:member	line:70	language:C++	class:CosmosGame_FrameListener	access:protected
+mNumScreenShots	src/Client/UI/CosmosGame_FrameListener.h	/^	unsigned int mNumScreenShots;$/;"	kind:member	line:84	language:C++	class:CosmosGame_FrameListener	access:private
+mRoot	src/Client/UI/CosmosGame.h	/^	Root *mRoot;$/;"	kind:member	line:40	language:C++	class:CosmosGame	access:protected
+mRotScale	src/Client/UI/CosmosGame_FrameListener.h	/^	Degree mRotScale;$/;"	kind:member	line:86	language:C++	class:CosmosGame_FrameListener	access:private
+mRotX	src/Client/UI/CosmosGame_FrameListener.h	/^	Radian mRotX, mRotY;$/;"	kind:member	line:89	language:C++	class:CosmosGame_FrameListener	access:private
+mRotY	src/Client/UI/CosmosGame_FrameListener.h	/^	Radian mRotX, mRotY;$/;"	kind:member	line:89	language:C++	class:CosmosGame_FrameListener	access:private
+mRotateSpeed	src/Client/UI/CosmosGame_FrameListener.h	/^	Degree mRotateSpeed;$/;"	kind:member	line:71	language:C++	class:CosmosGame_FrameListener	access:protected
+mSceneDetailIndex	src/Client/UI/CosmosGame_FrameListener.h	/^	int mSceneDetailIndex;$/;"	kind:member	line:69	language:C++	class:CosmosGame_FrameListener	access:protected
+mSceneMgr	src/Client/UI/CosmosGame.h	/^	SceneManager *mSceneMgr;$/;"	kind:member	line:42	language:C++	class:CosmosGame	access:protected
+mStatsOn	src/Client/UI/CosmosGame_FrameListener.h	/^	bool mStatsOn, mUseBufferedInputKeys, mUseBufferedInputMouse, mInputTypeSwitchingOn;$/;"	kind:member	line:83	language:C++	class:CosmosGame_FrameListener	access:private
+mTimeUntilNextToggle	src/Client/UI/CosmosGame_FrameListener.h	/^	Real mTimeUntilNextToggle;$/;"	kind:member	line:88	language:C++	class:CosmosGame_FrameListener	access:private
+mTranslateVector	src/Client/UI/CosmosGame_FrameListener.h	/^	Vector3 mTranslateVector;$/;"	kind:member	line:81	language:C++	class:CosmosGame_FrameListener	access:private
+mUseBufferedInputKeys	src/Client/UI/CosmosGame_FrameListener.h	/^	bool mStatsOn, mUseBufferedInputKeys, mUseBufferedInputMouse, mInputTypeSwitchingOn;$/;"	kind:member	line:83	language:C++	class:CosmosGame_FrameListener	access:private
+mUseBufferedInputMouse	src/Client/UI/CosmosGame_FrameListener.h	/^	bool mStatsOn, mUseBufferedInputKeys, mUseBufferedInputMouse, mInputTypeSwitchingOn;$/;"	kind:member	line:83	language:C++	class:CosmosGame_FrameListener	access:private
+mWindow	src/Client/UI/CosmosGame.h	/^	RenderWindow *mWindow;$/;"	kind:member	line:44	language:C++	class:CosmosGame	access:protected
+mWindow	src/Client/UI/CosmosGame_FrameListener.h	/^	RenderWindow *mWindow;$/;"	kind:member	line:82	language:C++	class:CosmosGame_FrameListener	access:private
+mad	media/materials/programs/Example_FresnelPS.asm	/^mad r0.xyz, r0_bx2, c0.x, r1$/;"	kind:label	line:46	language:Asm
+mad	media/materials/programs/OffsetMapping_specular.asm	/^mad r0.rgb, r0, c0, r5         \/\/ colour = diffusetex * (N dot L)* diffuselight + specular $/;"	kind:label	line:43	language:Asm
+mad	media/materials/programs/OffsetMapping_specular.asm	/^mad r0.xyz, r0.a, c2.x, c2.y   \/\/ displacement = height * scale + bias $/;"	kind:label	line:22	language:Asm
+mad	media/materials/programs/OffsetMapping_specular.asm	/^mad r2.xyz, r3, r0, r2         \/\/ newtexcoord = eyedir * displacement + uv $/;"	kind:label	line:23	language:Asm
+main	config.guess	/^		main()$/;"	kind:function	line:519	language:Sh
+main	config.guess	/^	main ()$/;"	kind:function	line:642	language:Sh
+main	config.guess	/^main ()$/;"	kind:function	line:1177	language:Sh
+main	src/Client/UI/main.cpp	/^int main(int argc, char *argv[])$/;"	kind:function	line:68	language:C++	signature:(int argc, char *argv[])
+main	src/Editor/main.cpp	/^int main()$/;"	kind:function	line:20	language:C++	signature:()
+mov	media/materials/programs/Example_FresnelPS.asm	/^mov r1.z, c2.y$/;"	kind:label	line:26	language:Asm
+moveCamera	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::moveCamera()$/;"	kind:function	line:271	language:C++	class:CosmosGame_FrameListener	signature:()
+moveCamera	src/Client/UI/CosmosGame_FrameListener.h	/^	void moveCamera();$/;"	kind:prototype	line:49	language:C++	class:CosmosGame_FrameListener	access:public	signature:()
+mul	media/materials/programs/OffsetMapping_specular.asm	/^mul r0.rgb, r4, r1            \/\/ colour = diffusetex * N dot L $/;"	kind:label	line:35	language:Asm
+mul	media/materials/programs/OffsetMapping_specular.asm	/^mul r5.rgb, r5, c1            \/\/ specular = (N dot H)^32 * specularlight $/;"	kind:label	line:41	language:Asm
+mul	media/materials/programs/OffsetMapping_specular.asm	/^mul r5.rgb, r5, r5          $/;"	kind:label	line:39	language:Asm
+mul	media/materials/programs/OffsetMapping_specular.asm	/^mul r5.rgb, r5, r5          $/;"	kind:label	line:40	language:Asm
+mul	media/materials/programs/OffsetMapping_specular.asm	/^mul r5.rgb, r5.a, r5.a          $/;"	kind:label	line:38	language:Asm
+phase	media/materials/programs/Example_FresnelPS.asm	/^phase$/;"	kind:label	line:48	language:Asm
+phase	media/materials/programs/OffsetMapping_specular.asm	/^phase $/;"	kind:label	line:25	language:Asm
+processUnbufferedKeyInput	src/Client/UI/CosmosGame_FrameListener.cpp	/^bool CosmosGame_FrameListener::processUnbufferedKeyInput(const FrameEvent &evt)$/;"	kind:function	line:105	language:C++	class:CosmosGame_FrameListener	signature:(const FrameEvent &evt)
+processUnbufferedKeyInput	src/Client/UI/CosmosGame_FrameListener.h	/^	bool processUnbufferedKeyInput(const FrameEvent &evt);$/;"	kind:prototype	line:45	language:C++	class:CosmosGame_FrameListener	access:public	signature:(const FrameEvent &evt)
+processUnbufferedMouseInput	src/Client/UI/CosmosGame_FrameListener.cpp	/^bool CosmosGame_FrameListener::processUnbufferedMouseInput(const FrameEvent &evt)$/;"	kind:function	line:252	language:C++	class:CosmosGame_FrameListener	signature:(const FrameEvent &evt)
+processUnbufferedMouseInput	src/Client/UI/CosmosGame_FrameListener.h	/^	bool processUnbufferedMouseInput(const FrameEvent &evt);$/;"	kind:prototype	line:47	language:C++	class:CosmosGame_FrameListener	access:public	signature:(const FrameEvent &evt)
+prototypes	configure	/^   function prototypes and stuff, but not '\\xHH' hex character constants.$/;"	kind:function	line:2647	language:Sh
+read_map	src/Client/Engine/map.cpp	/^int read_map(char *map_path)$/;"	kind:function	line:18	language:C++	signature:(char *map_path)
+setup	src/Client/UI/CosmosGame.cpp	/^bool CosmosGame::setup()$/;"	kind:function	line:44	language:C++	class:CosmosGame	signature:()
+setup	src/Client/UI/CosmosGame.h	/^	bool setup();$/;"	kind:prototype	line:48	language:C++	class:CosmosGame	access:protected	signature:()
+setupResources	src/Client/UI/CosmosGame.cpp	/^void CosmosGame::setupResources()$/;"	kind:function	line:134	language:C++	class:CosmosGame	signature:()
+setupResources	src/Client/UI/CosmosGame.h	/^	void setupResources();$/;"	kind:prototype	line:66	language:C++	class:CosmosGame	access:protected	signature:()
+shl_load	configure	/^shl_load ();$/;"	kind:function	line:12097	language:Sh
+shl_load	configure	/^shl_load ();$/;"	kind:function	line:17615	language:Sh
+shl_load	configure	/^shl_load ();$/;"	kind:function	line:8389	language:Sh
+showDebugOverlay	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::showDebugOverlay(const bool show)$/;"	kind:function	line:280	language:C++	class:CosmosGame_FrameListener	signature:(const bool show)
+showDebugOverlay	src/Client/UI/CosmosGame_FrameListener.h	/^	void showDebugOverlay(const bool show);$/;"	kind:prototype	line:51	language:C++	class:CosmosGame_FrameListener	access:public	signature:(const bool show)
+switchKeyMode	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::switchKeyMode()$/;"	kind:function	line:363	language:C++	class:CosmosGame_FrameListener	signature:()
+switchKeyMode	src/Client/UI/CosmosGame_FrameListener.h	/^	void switchKeyMode();$/;"	kind:prototype	line:60	language:C++	class:CosmosGame_FrameListener	access:public	signature:()
+switchMouseMode	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::switchMouseMode()$/;"	kind:function	line:358	language:C++	class:CosmosGame_FrameListener	signature:()
+switchMouseMode	src/Client/UI/CosmosGame_FrameListener.h	/^	void switchMouseMode();$/;"	kind:prototype	line:58	language:C++	class:CosmosGame_FrameListener	access:public	signature:()
+texcrd	media/materials/programs/Example_FresnelPS.asm	/^texcrd r1.xy, t1_dw.xyw$/;"	kind:label	line:25	language:Asm
+texcrd	media/materials/programs/OffsetMapping_specular.asm	/^texcrd r2.xyz, t0            \/\/ get uv coordinates $/;"	kind:label	line:18	language:Asm
+texcrd	media/materials/programs/OffsetMapping_specular.asm	/^texcrd r3.xyz, t2            \/\/ get eyedir vector $/;"	kind:label	line:19	language:Asm
+texcrd	media/materials/programs/OffsetMapping_specular.asm	/^texcrd r4.xyz, t1            \/\/ get lightdir vector $/;"	kind:label	line:29	language:Asm
+texcrd	media/materials/programs/OffsetMapping_specular.asm	/^texcrd r5.xyz, t3            \/\/ get half angle vector $/;"	kind:label	line:30	language:Asm
+texld	media/materials/programs/Example_FresnelPS.asm	/^texld r0, t0.xyz$/;"	kind:label	line:20	language:Asm
+texld	media/materials/programs/Example_FresnelPS.asm	/^texld r1, r0.xyz$/;"	kind:label	line:55	language:Asm
+texld	media/materials/programs/Example_FresnelPS.asm	/^texld r2, r0.xyz$/;"	kind:label	line:61	language:Asm
+texld	media/materials/programs/OffsetMapping_specular.asm	/^texld r0, r2.xyz            \/\/ get normal N using newtexcoord $/;"	kind:label	line:27	language:Asm
+texld	media/materials/programs/OffsetMapping_specular.asm	/^texld r0, t0               \/\/ get height $/;"	kind:label	line:17	language:Asm
+texld	media/materials/programs/OffsetMapping_specular.asm	/^texld r1, r2.xyz            \/\/ get diffuse texture using newtexcoord $/;"	kind:label	line:28	language:Asm
+updateStats	src/Client/UI/CosmosGame_FrameListener.cpp	/^void CosmosGame_FrameListener::updateStats()$/;"	kind:function	line:24	language:C++	class:CosmosGame_FrameListener	signature:()
+updateStats	src/Client/UI/CosmosGame_FrameListener.h	/^	void updateStats();$/;"	kind:prototype	line:74	language:C++	class:CosmosGame_FrameListener	access:protected	signature:()
+win32_libid	debug/libtool	/^win32_libid () {$/;"	kind:function	line:467	language:Sh
+win32_libid	ltmain.sh	/^win32_libid () {$/;"	kind:function	line:124	language:Sh
+~CosmosGame	src/Client/UI/CosmosGame.cpp	/^CosmosGame::~CosmosGame()$/;"	kind:function	line:26	language:C++	class:CosmosGame	signature:()
+~CosmosGame	src/Client/UI/CosmosGame.h	/^	~CosmosGame();$/;"	kind:prototype	line:35	language:C++	class:CosmosGame	access:public	signature:()
+~CosmosGame_FrameListener	src/Client/UI/CosmosGame_FrameListener.cpp	/^CosmosGame_FrameListener::~CosmosGame_FrameListener()$/;"	kind:function	line:97	language:C++	class:CosmosGame_FrameListener	signature:()
+~CosmosGame_FrameListener	src/Client/UI/CosmosGame_FrameListener.h	/^	~CosmosGame_FrameListener();$/;"	kind:prototype	line:43	language:C++	class:CosmosGame_FrameListener	access:public	signature:()

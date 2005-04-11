@@ -1,0 +1,31 @@
+AC_INIT(configure.in)
+
+AM_CONFIG_HEADER(config.h)
+AM_INIT_AUTOMAKE(cosmos, 0.1)
+
+AC_LANG_CPLUSPLUS
+AC_PROG_CC
+AC_PROG_CXX
+AM_PROG_LIBTOOL
+
+AC_C_CONST
+
+AC_HEADER_STDBOOL
+
+dnl Check for gcc/g++ version
+if test x$GCC = xyes; then
+	AC_MSG_CHECKING([GCC version 3.x])
+	if test -n "`$CC --version 2>&1 | grep '3.'`"; then
+		AC_DEFINE(GCC_3_1, , 3.x GCC version)
+		AC_MSG_RESULT(yes);
+	else
+		AC_MSG_RESULT(no)!
+	fi
+fi
+
+dnl Check for OGRE rendering engine
+PKG_CHECK_MODULES(OGRE, OGRE)
+AC_SUBST(OGRE_CFLAGS)
+AC_SUBST(OGRE_LIBS)
+
+AC_OUTPUT(Makefile src/Makefile src/Client/Makefile src/Server/Makefile src/Editor/Makefile src/Client/UI/Makefile src/Client/Engine/Makefile)

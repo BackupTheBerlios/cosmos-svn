@@ -1,0 +1,1 @@
+map.o map.o: /home/hyperfusion/kdevelop/cosmos/src/Client/Engine/map.cpp
