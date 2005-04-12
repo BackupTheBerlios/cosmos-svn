@@ -42,9 +42,9 @@ void CosmosGame_FrameListener::updateStats()
 		guiAvg->setCaption(avgFps + StringConverter::toString(stats.avgFPS));
 		guiCurr->setCaption(currFps + StringConverter::toString(stats.lastFPS));
 		guiBest->setCaption(bestFps + StringConverter::toString(stats.bestFPS) + " "
-				+ StringConverter::toString(stats.bestFrameTime)+" ms");
+				+ StringConverter::toString(stats.bestFrameTime) + " ms");
 		guiWorst->setCaption(worstFps + StringConverter::toString(stats.worstFPS) + " "
-				+ StringConverter::toString(stats.worstFrameTime)+" ms");
+				+ StringConverter::toString(stats.worstFrameTime) + " ms");
 
 		OverlayElement *guiTris = OverlayManager::getSingleton().getOverlayElement("Core/NumTris");
 		guiTris->setCaption(tris + StringConverter::toString(stats.triangleCount));
@@ -56,11 +56,11 @@ void CosmosGame_FrameListener::updateStats()
 }
 
 // Constructor takes a RenderWindow because it uses that to determine input context
-CosmosGame_FrameListener::CosmosGame_FrameListener(RenderWindow *win, Camera *cam, bool useBufferedInputKeys /*= false*/, bool useBufferedInputMouse /*= false*/)
+CosmosGame_FrameListener::CosmosGame_FrameListener(RenderWindow *rw, Camera *cam, const bool useBufferedInputKeys /*= false*/, const bool useBufferedInputMouse /*= false*/)
 {
 	debugOverlay = OverlayManager::getSingleton().getByName("Core/DebugOverlay");
-	useBufferedInputKeys = useBufferedInputKeys;
-	useBufferedInputMouse = useBufferedInputMouse;
+	this->useBufferedInputKeys = useBufferedInputKeys;
+	this->useBufferedInputMouse = useBufferedInputMouse;
 	inputTypeSwitchingOn = useBufferedInputKeys || useBufferedInputMouse;
 	rotationSpeed = 36;
 	movementSpeed = 100;
@@ -68,7 +68,7 @@ CosmosGame_FrameListener::CosmosGame_FrameListener(RenderWindow *win, Camera *ca
 	if (inputTypeSwitchingOn)
 	{
 		eventProcessor = new EventProcessor();
-		eventProcessor->initialise(win);
+		eventProcessor->initialise(rw);
 		eventProcessor->startProcessingEvents();
 		eventProcessor->addKeyListener(this);
 		inputDevice = eventProcessor->getInputReader();
@@ -76,11 +76,11 @@ CosmosGame_FrameListener::CosmosGame_FrameListener(RenderWindow *win, Camera *ca
 	else
 	{
 		inputDevice = PlatformManager::getSingleton().createInputReader();
-		inputDevice->initialise(win, true, true);
+		inputDevice->initialise(rw, true, true);
 	}
 
 	camera = cam;
-	renderWindow = win;
+	renderWindow = rw;
 	statsOn = true;
 	numScreenShots = 0;
 	timeUntilNextToggle = 0;
@@ -106,23 +106,23 @@ bool CosmosGame_FrameListener::processUnbufferedKeyInput(const FrameEvent &evt)
 {
 	if (inputDevice->isKeyDown(KC_A))
 	{
-	// Move camera left
+		// Move camera left
 		translateVector.x = -moveScale;
 	}
 
 	if (inputDevice->isKeyDown(KC_D))
 	{
-	// Move camera RIGHT
+		// Move camera right
 		translateVector.x = moveScale;
 	}
 
-	/* Move camera forward by keypress. */
+	// Move camera forward by keypress.
 	if (inputDevice->isKeyDown(KC_UP) || inputDevice->isKeyDown(KC_W) )
 	{
 		translateVector.z = -moveScale;
 	}
 
-	/* Move camera backward by keypress. */
+	// Move camera backward by keypress.
 	if (inputDevice->isKeyDown(KC_DOWN) || inputDevice->isKeyDown(KC_S))
 	{
 		translateVector.z = moveScale;
@@ -130,13 +130,13 @@ bool CosmosGame_FrameListener::processUnbufferedKeyInput(const FrameEvent &evt)
 
 	if (inputDevice->isKeyDown(KC_PGUP))
 	{
-	// Move camera up
+		// Move camera up
 		translateVector.y = moveScale;
 	}
 
 	if (inputDevice->isKeyDown(KC_PGDOWN))
 	{
-	// Move camera down
+		// Move camera down
 		translateVector.y = -moveScale;
 	}
 
@@ -183,27 +183,30 @@ bool CosmosGame_FrameListener::processUnbufferedKeyInput(const FrameEvent &evt)
 				texFilterOpts = TFO_TRILINEAR;
 				aniso = 1;
 				break;
+
 			case TFO_TRILINEAR:
 				texFilterOpts = TFO_ANISOTROPIC;
 				aniso = 8;
 				break;
+
 			case TFO_ANISOTROPIC:
 				texFilterOpts = TFO_BILINEAR;
 				aniso = 1;
 				break;
+
 			default:
 				break;
 		}
+
 		MaterialManager::getSingleton().setDefaultTextureFiltering(texFilterOpts);
 		MaterialManager::getSingleton().setDefaultAnisotropy(aniso);
-
 
 		showDebugOverlay(statsOn);
 
 		timeUntilNextToggle = 1;
 	}
 
-	if (inputDevice->isKeyDown(KC_SYSRQ) && timeUntilNextToggle <= 0)
+	if (inputDevice->isKeyDown(KC_SYSRQ) && (timeUntilNextToggle <= 0))
 	{
 		char tmp[20];
 		sprintf(tmp, "screenshot_%d.png", ++numScreenShots);
@@ -212,26 +215,29 @@ bool CosmosGame_FrameListener::processUnbufferedKeyInput(const FrameEvent &evt)
 		renderWindow->setDebugText(String("Wrote ") + tmp);
 	}
 
-	if (inputDevice->isKeyDown(KC_R) && timeUntilNextToggle <=0)
+	if (inputDevice->isKeyDown(KC_R) && (timeUntilNextToggle <= 0))
 	{
-		sceneDetailIndex = (sceneDetailIndex +1 ) % 3;
+		sceneDetailIndex = (sceneDetailIndex + 1 ) % 3;
 		switch (sceneDetailIndex)
 		{
 			case 0:
 				camera->setDetailLevel(SDL_SOLID);
 				break;
+
 			case 1:
 				camera->setDetailLevel(SDL_WIREFRAME);
 				break;
+
 			case 2:
 				camera->setDetailLevel(SDL_POINTS);
 				break;
+
 		}
 		timeUntilNextToggle = 0.5;
 	}
 
 	static bool displayCameraDetails = false;
-	if (inputDevice->isKeyDown(KC_P) && timeUntilNextToggle <= 0)
+	if (inputDevice->isKeyDown(KC_P) && (timeUntilNextToggle <= 0))
 	{
 		displayCameraDetails = !displayCameraDetails;
 		timeUntilNextToggle = 0.5;
@@ -352,6 +358,7 @@ bool CosmosGame_FrameListener::frameStarted(const FrameEvent &evt)
 bool CosmosGame_FrameListener::frameEnded(const FrameEvent &evt)
 {
 	updateStats();
+
 	return true;
 }
 
@@ -366,22 +373,19 @@ void CosmosGame_FrameListener::switchKeyMode()
 	inputDevice->setBufferedInput(useBufferedInputKeys, useBufferedInputMouse);
 }
 
-void CosmosGame_FrameListener::keyClicked(KeyEvent *e)
+void CosmosGame_FrameListener::keyClicked(KeyEvent &e)
 {
-	if (e->getKeyChar() == 'm')
-	{
+	const char input = e.getKeyChar();
+	if (input == 'm')
 		switchMouseMode();
-	}
-	else if (e->getKeyChar() == 'k')
-	{
+	else if (input == 'k')
 		switchKeyMode();
-	}
-	}
+}
 
-void CosmosGame_FrameListener::keyPressed(KeyEvent *e)
+void CosmosGame_FrameListener::keyPressed(KeyEvent &e)
 {
 }
 
-void CosmosGame_FrameListener::keyReleased(KeyEvent *e)
+void CosmosGame_FrameListener::keyReleased(KeyEvent &e)
 {
 }

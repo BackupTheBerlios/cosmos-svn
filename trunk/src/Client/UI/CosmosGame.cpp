@@ -133,7 +133,6 @@ void CosmosGame::createViewports()
 
 void CosmosGame::setupResources()
 {
-	/*
 	// Load resource paths from config file
 	ConfigFile cf;
 	cf.load("resources.cfg");
@@ -144,16 +143,16 @@ void CosmosGame::setupResources()
 	String secName, typeName, archName;
 	while (seci.hasMoreElements())
 	{
-	secName = seci.peekNextKey();
-	ConfigFile::SettingsMultiMap *settings = seci.getNext();
-	ConfigFile::SettingsMultiMap::iterator i;
-	for (i = settings->begin(); i != settings->end(); i++)
-	{
-	typeName = i->first;
-	archName = i->second;
-	ResourceGroupManager::getSingleton().addResourceLocation(archName, typeName, secName);
-}
-}*/
+		secName = seci.peekNextKey();
+		ConfigFile::SettingsMultiMap *settings = seci.getNext();
+		ConfigFile::SettingsMultiMap::iterator i;
+		for (i = settings->begin(); i != settings->end(); i++)
+		{
+			typeName = i->first;
+			archName = i->second;
+			ResourceGroupManager::getSingleton().addResourceLocation(archName, typeName, secName);
+		}
+	}
 }
 
 void CosmosGame::createResourceListener()
